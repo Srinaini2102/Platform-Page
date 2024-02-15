@@ -22,6 +22,8 @@ import ChallengeAccept from './components/ChallengeAccept/ChallengeAccept';
 import VP from './components/Value Proposition/VP';
 import ResearchProject from './components/Projects/ResearchProject';
 import ResearchProjectComp from './components/Projects/ResearchProjectComponent';
+import VillageProjectComp from './components/Projects/VillageProjectComponent';
+import VillageProject from './components/Projects/VillageProject';
 
 export default function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -69,6 +71,12 @@ export default function App() {
           <Route
             path="/research-project/comp/:id"
             element={<ResearchProjectComp />}/>
+          <Route
+            path="/village-project/:id"
+            element={<VillageProject />}/>
+          <Route
+            path="/village/comp/:id"
+            element={<VillageProjectComp />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

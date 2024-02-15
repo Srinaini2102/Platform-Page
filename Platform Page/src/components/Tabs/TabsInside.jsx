@@ -60,7 +60,7 @@ import {
             initial: { y: 250 },
             mount: { y: 0 },
             unmount: { y: 250 },
-          }}
+          }} 
         >
           {data.map(({ value, desc }) => (
             <TabPanel key={value} value={value}>

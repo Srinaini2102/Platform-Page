@@ -208,79 +208,42 @@
     width: 250%;
   }
   .card {
-    width: 190px;
+    max-width: 250px;
     height: 254px;
-    background: #0e002d;
+    border: 2px solid grey;
     border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #100a886b;
-   }
-   
-   .card .card-border-top {
-    width: 60%;
-    height: 3%;
-    background: #6b64f3;
-    margin: auto;
-    border-radius: 0px 0px 15px 15px;
-   }
-   
-   .card span {
-    font-weight: 600;
-    color: white;
+    box-shadow: 5px 5px 5px hsla(0 , 0, 0, 0.1);
     text-align: center;
-    display: block;
-    padding-top: 10px;
-    font-size: 16px;
-   }
-   
-   .card .job {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    padding-top: 3px;
-    font-size: 12px;
-   }
-   
-   .card .img {
-    width: 70px;
-    height: 80px;
-    background: #6b64f3;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 25px;
-   }
-   
-   .card button {
-    padding: 8px 25px;
-    display: block;
-    margin: auto;
-    border-radius: 8px;
-    border: none;
-    margin-top: 30px;
-    background: #6b64f3;
-    color: white;
-    font-weight: 600;
-   }
-   
-   .card button:hover {
-    background: #534bf3;
-   }
-   .cards{
-    margin-top: none;
-    padding: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #003262;
    }
+   .card .cardImage{
+    max-width: 60%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+   }
+   .card .cardTitle{
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+   }
+   .card p{
+    color: grey;
+    padding: 15px;
+   }
+   
+   
    .heading-community{
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     margin-bottom: 20px;
-    margin-top: 50px;
+    padding-top: 100px;
     font-size: xxx-large;
     font-weight: 700;
     opacity: 70%;
@@ -451,7 +414,7 @@
 .back-img{
   background-image: url('src/assets/background.jpg');
   
-  height: 200px;
+  height: 400px;
   width: auto;
   display: flex;
   align-items: center;
@@ -460,10 +423,10 @@
 }
   
   .page-heading{
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 700;
     color: whitesmoke;
-    opacity: 50%;
+    
     letter-spacing: 2px;
     text-align: center;
     
@@ -505,8 +468,8 @@
   display: flex;
   width: 50%;
   height: 500px;
-  margin-right: 0px;
-  box-shadow: 8px 8px 10px ;
+  padding-right: 0px;
+  
   
 }
 .RC{
@@ -538,7 +501,7 @@
   height: 70px;
   color:#fbbf24;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   text-decoration: none;
   font-weight: 600;
   padding-left: 20px;
@@ -767,10 +730,11 @@ font-size: larger;
   
 }
 .meghalaya{
-  background-image: url('./assets/meghalaya.jpg');
+  
   width: auto;
-  height: 1000px;
+  height: auto;
   background-size: cover;
+  margin-right: 0;
 }
 
 .post-challenge{
@@ -913,7 +877,7 @@ font-size: larger;
 .search input{
   border: 2px solid grey;
   border-radius: 10px;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .logeen{
   border: 2px solid grey;
@@ -921,6 +885,7 @@ font-size: larger;
   padding: 5px 10px;
   border-radius: 10px;
   background-color: black;
+  margin-right: 10px;
 }
 .ved{
   margin-top: 10px;
@@ -1023,4 +988,19 @@ font-size: larger;
   align-items: center;
   justify-content: center;
   text-align: center;
+  gap: 10px;
+}
+.inside-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003262;
+  height:40px;
+  color: white;
+}
+.tags{
+  padding-left: 30px;
+}
+.community{
+  background-image: url('./assets/Community.jpg');
 }

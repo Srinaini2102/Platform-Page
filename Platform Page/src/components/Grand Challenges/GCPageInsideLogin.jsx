@@ -49,20 +49,15 @@ export default function GCPageInsideLogin() {
 
   return (
     <>
-      <section className='title-challenge'>
-        {challengeData.title}
-      </section>
+      <div className='back-img'>
+        <h3 className='page-heading'>{challengeData.title}</h3>
+      </div>
       
-      <div className='second-div'>
-        <div><a href=""> Go Back </a></div>
-        <div><button className='gc-button'>Discussions</button></div>
-      </div>
+      
 
-      <div className='flex items-center justify-center h-20 font-bold '>
-        {challengeData.title}
-      </div>
-      <img className="rounded-t-lg" src={challengeData.imageUrl} alt="" />
-      <div className='flex flex-wrap items-center justify-between mb-16 mr-10 ml-10'>
+      
+      
+      <div className='flex flex-wrap items-center justify-between mb-10 mt-10 mr-10 ml-10'>
         <div><b>Sector:</b> {challengeData.sector}</div>
         <div><b>Keywords:</b> {challengeData.keywords}</div>
         <div><b>Followed by :</b> {challengeData.followedBy}</div>
@@ -71,7 +66,7 @@ export default function GCPageInsideLogin() {
       <div className='tabs-gc'>
         {tabsArray.length > 0 && (
           <Tabs id="custom-animation" value={id}>
-            <TabsHeader>
+            <TabsHeader className='bg-blue-900 ml-10 mr-10'>
             {tabsArray.map(({ label, value }) => (
               <Tab key={value} value={value}>
                 {label}
@@ -87,7 +82,7 @@ export default function GCPageInsideLogin() {
             >
               {tabsArray.map(({ value, desc }) => (
                 <TabPanel key={value} value={value}>
-                  {desc}
+                  <b>{desc}</b>
                 </TabPanel>
               ))}
             </TabsBody>

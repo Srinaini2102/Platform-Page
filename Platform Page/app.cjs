@@ -178,6 +178,54 @@ app.get("/api/technologies/:id", async (req, res) => {
    }
  });
   
+ app.get("/api/village-project/:id", async (req, res) => {
+  const challengeId = req.params.id;
+ 
+  try {
+    const details = await Village.findById(challengeId);
+
+    if (!details) {
+      return res.status(404).json({ error: "Village not found" });
+   }
+ 
+   res.json(details);
+   } catch (error) {
+     console.error(error);
+     res.status(500).json({ error: "Internal server error" });
+   }
+ });
+
+ app.get("/village-project/:id", async (req, res) => {
+  try {
+    const challengeId = req.params.id;
+    const det = await Village.findById(challengeId);
+    const details = await Activity.find({ folder: det.folder })
+
+    res.json(details);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json("error");
+  }
+});
+
+ app.get("/api/village-project/comp/:id", async (req, res) => {
+  const challengeId = req.params.id;
+  try {
+    const details = await Activity.findById(challengeId);
+
+    if (!details) {
+      return res.status(404).json({ error: "Technology not found" });
+   }
+ 
+   res.json(details);
+   } catch (error) {
+     console.error(error);
+     res.status(500).json({ error: "Internal server error" });
+   }
+ });
+
+
+
 app.get("/api/details/:id", async (req, res) => {
    const challengeId = req.params.id;
   

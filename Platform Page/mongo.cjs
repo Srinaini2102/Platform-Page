@@ -206,6 +206,7 @@ const villageSchema=new mongoose.Schema({
 const activitySchema=new mongoose.Schema({
     name:String,
     date:String,
+    folder:String
 })
 
 const Village =mongoose.model("Village", villageSchema)
