@@ -276,5 +276,3 @@ app.get("/api/collab/:id", async (req, res) => {
 app.listen(8000,()=>{
     console.log("port connected");
 })
-
-module.exports = app;
