@@ -22,7 +22,7 @@ export default function Signup() {
   async function submit(e) {
     e.preventDefault();
 
-        const response = await axios.post("http://localhost:8000/signup", {
+        const response = await axios.post("https://backend-ijva.onrender.com/signup", {
             username,
             email,
             password

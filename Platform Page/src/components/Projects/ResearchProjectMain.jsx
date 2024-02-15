@@ -7,7 +7,7 @@ export default function ResearchProjectMain() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8000/api/research-project')
+    axios.get('https://backend-ijva.onrender.com/api/research-project')
       .then(response => {
         setDetails(response.data);
       })

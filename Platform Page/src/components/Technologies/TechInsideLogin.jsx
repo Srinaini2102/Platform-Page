@@ -17,7 +17,7 @@ export default function TechInsideLogin() {
 
   useEffect(() => {
     // Fetch data for the specific challenge based on the id parameter
-    axios.get(`http://localhost:8000/api/technologies/${id}`)
+    axios.get(`https://backend-ijva.onrender.com/api/technologies/${id}`)
       .then(response => {
         setChallengeData(response.data);
         setLoading(false);

@@ -10,7 +10,7 @@ export default function ResearchProjectMain() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get(`http://localhost:8000/api/village-project/${id}`)
+    axios.get(`https://backend-ijva.onrender.com/api/village-project/${id}`)
       .then(response => {
         setDetails(response.data);
       })
@@ -21,7 +21,7 @@ export default function ResearchProjectMain() {
 
   useEffect(() => {
     // Fetch data from the backend API (check the URL, it might need /api)
-    axios.get(`http://localhost:8000/village-project/${id}`)
+    axios.get(`https://backend-ijva.onrender.com/village-project/${id}`)
       .then(response => {
         setData(response.data);
       })

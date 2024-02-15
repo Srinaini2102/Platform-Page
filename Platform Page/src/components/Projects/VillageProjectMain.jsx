@@ -7,7 +7,7 @@ export default function VillageProjectMain() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8000/api/village-projects')
+    axios.get('https://backend-ijva.onrender.com/api/village-projects')
       .then(response => {
         setDetails(response.data);
       })

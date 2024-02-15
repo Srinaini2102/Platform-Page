@@ -19,7 +19,7 @@ export default function ChallengeAccept() {
     e.preventDefault();
   
     try {
-      const response = await axios.post("http://localhost:8000/api/challenges", {
+      const response = await axios.post("https://backend-ijva.onrender.com/api/challenges", {
         email,
         sector: country,
         title,

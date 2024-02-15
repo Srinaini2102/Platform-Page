@@ -7,7 +7,7 @@ export default function TechMain() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8000/api/technologies')
+    axios.get('https://backend-ijva.onrender.com/api/technologies')
       .then(response => {
         setDetails(response.data);
       })

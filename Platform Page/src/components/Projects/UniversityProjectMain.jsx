@@ -7,7 +7,7 @@ export default function UniversityProjectMain() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8000/api/university-projects')
+    axios.get('https://backend-ijva.onrender.com/api/university-projects')
       .then(response => {
         setDetails(response.data);
       })

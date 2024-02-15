@@ -9,7 +9,7 @@ export default function GCPage() {
 
   useEffect(() => {
     // Fetch data from the backend API
-    axios.get('http://localhost:8000/api/details')
+    axios.get('https://backend-ijva.onrender.com/api/details')
       .then(response => {
         setDetails(response.data);
       })

@@ -17,7 +17,7 @@ export default function InsideCollab() {
 
   useEffect(() => {
     // Fetch data for the specific challenge based on the id parameter
-    axios.get(`http://localhost:8000/api/collab/${id}`)
+    axios.get(`https://backend-ijva.onrender.com/api/collab/${id}`)
       .then(response => {
         setChallengeData(response.data);
         setLoading(false);
