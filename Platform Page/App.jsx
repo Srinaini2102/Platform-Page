@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-import Footer from './src/src/Footer';
+import Footer from './src/Footer';
 import GC from './src/pages/GC';
 import ResearchProjects from './src/pages/ResearchProjects';
 import UniversityProjects from './src/pages/UniversityProjects';
